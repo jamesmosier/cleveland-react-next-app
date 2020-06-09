@@ -1,8 +1,13 @@
 import Link from 'next/link';
+import Head from 'next/head';
 
 export default function Home({ users }) {
   return (
-    <div>
+    <>
+      <Head>
+        <title>{process.env.NEXT_PUBLIC_SITE_NAME}</title>
+      </Head>
+
       <div>
         <h4>Users:</h4>
         <ol>
@@ -15,7 +20,7 @@ export default function Home({ users }) {
           ))}
         </ol>
       </div>
-    </div>
+    </>
   );
 }
 
