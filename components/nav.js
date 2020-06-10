@@ -10,10 +10,10 @@ const NavStyled = styled.nav`
   a {
     color: #fff;
     text-decoration: none;
-  }
 
-  a:hover {
-    color: #aaa;
+    &:hover {
+      color: #aaa;
+    }
   }
 `;
 
